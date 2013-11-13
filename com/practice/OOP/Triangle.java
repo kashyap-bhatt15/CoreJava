@@ -1,5 +1,6 @@
 package com.practice.OOP;
 
+@SuppressWarnings("unused")
 public class Triangle implements Shape {
 
 	private int height;
