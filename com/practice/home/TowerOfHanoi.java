@@ -41,6 +41,7 @@ public class TowerOfHanoi {
 		}
 		else {
 			moveDisks(no-1, start, interm, end);
+			//System.out.println("move " + no + " from " + start + " to " + end);
 			System.out.println("move " + no + " from " + start + " to " + end);
 			moveDisks(no-1, interm, end, start);
 			//System.out.println(" ----------------------------------------------- ");
