@@ -64,6 +64,17 @@ public class StringDemo {
 		
 		Double d = 123.00;		
 		System.out.println(String.valueOf(d));
+		
+		System.out.println("=======================================================");
+		String ss = null;
+		String sss = "";
+		
+		if(ss != null)
+			System.out.println("ss");
+		else if (sss != "")
+			System.out.println("sss");
+		else
+			System.out.println("else");
 
 				
 	}

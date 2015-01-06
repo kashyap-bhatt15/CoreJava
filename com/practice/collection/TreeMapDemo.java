@@ -6,28 +6,28 @@ import java.util.TreeMap;
 public class TreeMapDemo {
 
 	public static void main(String[] args) {
-		TreeMap<Integer, String> treeMap = new TreeMap<>();
+		TreeMap<String, String> treeMap = new TreeMap<>();
 		
-		treeMap.put(1, "One");
-		treeMap.put(2, "Two");
-		treeMap.put(3, "Four");
+		treeMap.put("a", "One");
+		treeMap.put("b", "Two");
+		treeMap.put("c", "Four");
 		System.out.println(treeMap);
 		
-		treeMap.put(0, "Zero");
-		treeMap.put(3, "Three");
+		treeMap.put("aa", "Zero");
+		treeMap.put("A", "Three");
 		System.out.println(treeMap);
 		
-		treeMap.remove(2);
+		treeMap.remove("b");
 		System.out.println(treeMap);
 		
-		Iterator<Integer> iterator = treeMap.keySet().iterator();
+		Iterator<String> iterator = treeMap.keySet().iterator();
 		
 		System.out.println("============== Iteration ===========");
 		while(iterator.hasNext()) {
 			System.out.println(treeMap.get(iterator.next()));
 		}
 		
-		for (Integer i : treeMap.keySet()) {
+		for (String i : treeMap.keySet()) {
 			System.out.println(treeMap.get(i));
 		}
 	}

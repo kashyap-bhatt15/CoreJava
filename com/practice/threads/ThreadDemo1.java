@@ -11,6 +11,7 @@ public class ThreadDemo1 {
 		System.out.println("MyThread is Alive " + myThread.isAlive());
 		myThread.start();		
 		System.out.println("MyThread is Alive " + myThread.isAlive());
+		System.out.println("-----------------------");
 		//myThread.run();
 		
 		MyThread2 myThread2 = new MyThread2();
